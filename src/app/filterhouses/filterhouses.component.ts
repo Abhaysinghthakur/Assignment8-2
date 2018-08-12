@@ -12,7 +12,7 @@ export class FilterhousesComponent implements OnInit {
 
   ngOnInit() {
 
-    this.houseData = this._http.getHousesData().subscribe(
+   this._http.getHousesData().subscribe(
       data =>{
         this.houseData = data;
       },

@@ -23,7 +23,7 @@ export class HouseComponent implements OnInit {
   ngOnInit() {
 
     this.url=this._route.snapshot.paramMap.get("houseUrl");
-    this.houseData=this.http.getSingleData(this.url).subscribe(
+    this.http.getSingleData(this.url).subscribe(
       data =>{
         this.houseData = data;
       },

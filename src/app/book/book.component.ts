@@ -22,7 +22,7 @@ export class BookComponent implements OnInit {
   ngOnInit() {
 
     this.url=this._route.snapshot.paramMap.get("bookUrl");
-    this.bookData=this.http.getSingleData(this.url).subscribe(
+    this.http.getSingleData(this.url).subscribe(
       data =>{
         this.bookData = data;
       },

@@ -21,7 +21,7 @@ export class CharacterComponent implements OnInit {
     ngOnInit() {
 
     this.url=this._route.snapshot.paramMap.get("characterUrl");
-    this.characterData=this.http.getSingleData(this.url).subscribe(
+    this.http.getSingleData(this.url).subscribe(
       data =>{
         this.characterData = data;
       },

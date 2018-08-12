@@ -1,54 +1,57 @@
-
 <div class="row">
-  <div *ngIf="characterData">
-  <div *ngFor="let character of characterData" class="col-md-4" >
-      <div class="card cardContainer" style="width: 18rem;">
-          <img class="card-img-top" src="../../characters.jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Character<br/>:{{character.name}}</h5>
-            <p class="card-text">Gender:{{character.gender}}<br/>
-            Born:{{character.born}}<br/>
-            Culture:{{character.culture}}
-            </p>
-            <a [routerLink]="['/character',character.url]" class="btn btn-primary">More</a>
-          </div>
-        </div>
-    <br/>
-  </div>
-  </div>
 
-  <div *ngIf="bookData">
-  <div *ngFor="let book of bookData" class="col-md-4" >
+  <!-- <div *ngIf="characterData"> -->
+    <div *ngFor="let character of characterData" class="col-md-4">
       <div class="card cardContainer" style="width: 18rem;">
-          <img class="card-img-top" src="../../KNIGHT.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Book<br/>:{{book.name}}</h5>
-            <p class="card-text">publisher:{{book.publisher}}<br/>
-            Author:{{book.authors.toString()}}<br/>
-            Country:{{book.country}}
-            </p>
-            <a [routerLink]="['/book',book.url]" class="btn btn-primary">More</a>
-          </div>
+        <img class="card-img-top" src="../../characters.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Character
+            <br/>:{{character.name}}</h5>
+          <p class="card-text">Gender:{{character.gender}}
+            <br/> Born:{{character.born}}
+            <br/> Culture:{{character.culture}}
+          </p>
+          <a [routerLink]="['/character',character.url]" class="btn btn-primary">More</a>
         </div>
+      </div>
+      <br/>
+    </div>
+  <!-- </div> -->
+<!-- 
+  <div *ngIf="bookData"> -->
+    <div *ngFor="let book of bookData" class="col-md-4">
+      <div class="card cardContainer" style="width: 18rem;">
+        <img class="card-img-top" src="../../KNIGHT.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Book
+            <br/>:{{book.name}}</h5>
+          <p class="card-text">publisher:{{book.publisher}}
+            <br/> Author:{{book.authors.toString()}}
+            <br/> Country:{{book.country}}
+          </p>
+          <a [routerLink]="['/book',book.url]" class="btn btn-primary">More</a>
+        </div>
+      </div>
 
-    <br/>
-  </div>
-  </div>
-  
-  <div *ngIf="houseData">
-  <div *ngFor="let house of houseData" class="col-md-4 backColor" >
+      <br/>
+    </div>
+  <!-- </div> -->
+<!-- 
+  <div *ngIf="houseData"> -->
+    <div *ngFor="let house of houseData" class="col-md-4 backColor">
       <div class="card cardContainer" style="width: 18rem;">
-          <img class="card-img-top" src="../../got_house.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">House<br/>:{{house.name}}</h5>
-            <p class="card-text">Region:{{house.region}}<br/>
-            Coat of Arms:{{house.coatOfArms}}<br/>
-            Words:{{house.words}}
-            </p>
-            <a [routerLink]="['/house',house.url]" class="btn btn-primary">More</a>
-          </div>
+        <img class="card-img-top" src="../../got_house.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">House
+            <br/>:{{house.name}}</h5>
+          <p class="card-text">Region:{{house.region}}
+            <br/> Coat of Arms:{{house.coatOfArms}}
+            <br/> Words:{{house.words}}
+          </p>
+          <a [routerLink]="['/house',house.url]" class="btn btn-primary">More</a>
         </div>
-    <br/>
-  </div>
-  </div>
+      </div>
+      <br/>
+    </div>
+  <!-- </div> -->
 </div>
