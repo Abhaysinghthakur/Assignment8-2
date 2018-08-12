@@ -33,9 +33,17 @@ export class HttpServiceService {
     console.log(err.message);
     return Observable.throw(err.message);
   }
-  getCharacter(name):any{
 
+  getCharacter(name):any{
     console.log("in service")
     return this.http.get('https://www.anapioficeandfire.com/api/characters?name='+name)
+  }
+  getBook(name):any{
+    console.log("in service")
+    return this.http.get('https://www.anapioficeandfire.com/api/books?name='+name)
+  }
+  getHouse(name):any{
+    console.log("in service")
+    return this.http.get('https://www.anapioficeandfire.com/api/houses?name='+name)
   }
 }

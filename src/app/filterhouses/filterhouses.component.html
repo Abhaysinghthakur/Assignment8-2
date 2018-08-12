@@ -1,3 +1,18 @@
+<div class="row">
+
+        <div class="col -12">
+        <form #createBlogForm="ngForm" (ngSubmit)="getHouseData()">
+                <div class="form-group">
+                        <input type="text" name="HouseName" [(ngModel)]="houseName" #name="ngModel" class="form-control" placeholder="Search House by name"
+                          required><br/>
+                          <button type="submit" class="btn btn-default" [disabled]="!createBlogForm.form.valid">Search</button>
+                </div>
+        </form>
+        </div>
+    </div>
+    
+
+
 <div class="row"*ngIf="houseData">
     <div *ngFor="let house of houseData" class="col-md-4">
         <div class="card cardContainer" style="width: 18rem;">
