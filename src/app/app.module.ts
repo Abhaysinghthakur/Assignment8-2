@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 import {RouterModule} from '@angular/router'
 import {HttpClientModule} from '@angular/common/http';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -30,6 +33,8 @@ import { FilterhousesComponent } from './filterhouses/filterhouses.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
 
     RouterModule.forRoot([
       {path:'home',component:HomeComponent},
