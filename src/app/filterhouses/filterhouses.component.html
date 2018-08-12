@@ -1,0 +1,17 @@
+<div class="row"*ngIf="houseData">
+    <div *ngFor="let house of houseData" class="col-md-4">
+        <div class="card cardContainer" style="width: 18rem;">
+            <img class="card-img-top" src="../../got_house.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{house.name}}</h5>
+                <p class="card-text">Region:{{house.region}}
+                    <br/> Coat of Arms:{{house.coatOfArms}}
+                    <br/> Words:{{house.words}}
+                </p>
+                <a [routerLink]="['/house',house.url]" class="btn btn-primary">More</a>
+            </div>
+        </div>
+
+        <br/>
+    </div>
+</div>

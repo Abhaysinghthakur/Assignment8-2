@@ -1,0 +1,14 @@
+.header{
+    padding: 2vw;
+    background-color: black;
+    border-radius: 3px;
+    justify-content: center;
+    height:10vw;
+    background-image: url('../../header.jpeg');
+    background-size: cover;
+}
+
+
+.headerNav{
+    background-color:gray!important;
+}

@@ -1,0 +1,18 @@
+<div class="row" *ngIf="bookData">
+    <div *ngFor="let book of bookData" class="col-md-4" >
+        <div class="card cardContainer" style="width: 18rem;">
+            <img class="card-img-top" src="../../KNIGHT.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{book.name}}</h5>
+              <p class="card-text">publisher:{{book.publisher}}<br/>
+              Author:{{book.authors.toString()}}<br/>
+              Country:{{book.country}}
+              </p>
+              <a [routerLink]="['/book',book.url]" class="btn btn-primary">More</a>
+            </div>
+          </div>
+  
+      <br/>
+    </div>
+
+</div>

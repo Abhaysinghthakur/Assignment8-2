@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col -12"*ngIf="characterData">
+        <ul class="list-group">
+            <li class="list-group-item">Name:{{characterData.name}}</li>
+            <li class="list-group-item list-group-item-info">Gender:{{characterData.gender}}</li>
+            <li class="list-group-item list-group-item-info">Culture:{{characterData.culture}}</li>
+            <li class="list-group-item list-group-item-info">Born:{{characterData.born}}</li>
+            <li class="list-group-item list-group-item-info">Titles:{{characterData.titles.toString()}}</li>
+            <li class="list-group-item list-group-item-info">Played By:{{characterData.playedBy}}</li>
+          </ul>
+          <br/>
+          <button type="button" class="btn btn-info" (click)="goBack()">Go Back</button>
+    </div>
+  </div>

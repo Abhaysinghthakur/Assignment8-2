@@ -1,0 +1,20 @@
+
+<div class="row" *ngIf="characterData">
+
+
+    <div *ngFor="let character of characterData" class="col-md-4" >
+        <div class="card cardContainer" style="width: 18rem;">
+            <img class="card-img-top" src="../../characters.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{character.name}}</h5>
+              <p class="card-text">Gender:{{character.gender}}<br/>
+              Born:{{character.born}}<br/>
+              Culture:{{character.culture}}
+              </p>
+              <a [routerLink]="['/character',character.url]" class="btn btn-primary">More</a>
+            </div>
+          </div>
+      <br/>
+    </div>
+
+</div>

@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.backColor{
+    background-color: rgb(13, 13, 14);
+}
+
+body,html{
+    background-color: rgb(13, 13, 14);
+}
+
+.cardContainer{
+    margin: 2% 4% 0% 1%;
+}
+
+.backcolor{
+    background-color: rgb(121, 165, 204); 
+}
