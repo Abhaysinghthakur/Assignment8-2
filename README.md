@@ -1,3 +1,6 @@
+An Angular application to show all info about Game of thrones character, books and houses.
+
+
 # Assignment8
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
